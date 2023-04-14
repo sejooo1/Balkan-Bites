@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/sign.css">
+    <script src="../javaScript/forms.js"></script>
+    <title>Balkan Bites - Sign in</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <h2>Sign up form</h2>
+        <input type="text" placeholder="name" class="fullName" required>
+        <input type="text" placeholder="surname" class="fullName" required>
+        <input type="text" placeholder="username" required>
+        <input type="email" placeholder="email" required>
+        <input type="password" placeholder="password" required><br>
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" id="custom" name="gender" checked>
+        <label for="custom">Custom</label><br>
+        <label for="birthday">Date of birth: </label>
+        <input type="date" name="birthday" id="birthday" required><br>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label><br>
+          <button type="submit" class="signupBtn">Sign Up</button>
+          <button type="button" onclick="backToHome()" id="cancel" class="cancelBtn">Cancel</button>
+    </form>
+</body>
+</html>
