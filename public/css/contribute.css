@@ -12,12 +12,46 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-image: url("../img/gyros.jpg");
+  background-image: url("../img/pide.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.headline {
+  background-color: rgba(202, 202, 221, 0.8);
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: auto;
+  font-size: 1vb;
+}
+
+.main {
+  background-color: rgba(202, 202, 221, 0.8);
+  height: 100%;
+  display: block;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin: auto;
+  font-size: 3vb;
+}
+
+label {
+  display: block;
+}
+
+#meal-ingredients {
+  width: 50vw;
+  height: 10vh;
+}
+
+#meal-instructions {
+  width: 50vw;
+  height: 20vh;
+}
+
 header {
   background-color: rgba(202, 202, 221, 0.8);
   display: flex;
@@ -87,28 +121,6 @@ header button:hover {
   filter: none;
 }
 
-.headline {
-  background-color: rgba(202, 202, 221, 0.8);
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  margin: auto;
-  font-size: 2.8vb;
-}
-
-.main {
-  background-color: rgba(202, 202, 221, 0.8);
-  height: 100%;
-  display: block;
-  justify-content: center;
-  padding-top: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: auto;
-  font-size: 3.2vb;
-  overflow: auto;
-}
-
 ​ @media only screen and (max-width: 750px) {
   header ul li a {
     padding: 5px;
@@ -116,5 +128,9 @@ header button:hover {
 
   header button {
     padding: 5px 10px;
+  }
+
+  .main {
+    font-size: 3.2vh;
   }
 }
