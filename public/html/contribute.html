@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/contribute.css" />
+    <title>Balkan Bites - Contribute</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="../img/Logo.png" alt="Upss" />
+      </div>
+      <div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="contribute.html">Contribute</a></li>
+        </ul>
+      </div>
+      <div>
+        <button type="button">Login</button>
+        <button type="button">Sign up</button>
+      </div>
+    </header>
+
+    <div class="headline">
+      <h1>Contribute a Recipe</h1>
+    </div>
+    <div class="main">
+      <form action="#" method="post" enctype="multipart/form-data">
+        <label for="meal-image">Meal Image:</label>
+        <input
+          type="file"
+          name="meal-image"
+          id="meal-image"
+          accept="image/*"
+          required
+        />
+        <label for="meal-name">Meal Name:</label>
+        <input type="text" name="meal-name" id="meal-name" required />
+        <label for="meal-ingredients">Ingredients:</label>
+        <textarea
+          name="meal-ingredients"
+          id="meal-ingredients"
+          required
+        ></textarea>
+        <label for="meal-instructions">Instructions:</label>
+        <textarea
+          name="meal-instructions"
+          id="meal-instructions"
+          required
+        ></textarea>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
